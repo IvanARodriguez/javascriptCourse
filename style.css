@@ -124,16 +124,16 @@ nav li a:hover{
 .courses-btn{
     margin: 1.3em 0;
     background: none;
-    color: rgb(122, 75, 165);
+    color: rgb(0, 41, 177);
     border-radius: 10px;
     font-size: 1em;
     padding: 10px;
-    border: 2px solid rgb(122, 75, 165);
+    border: 2px solid rgb(0, 41, 177);
     cursor: pointer;
     font-weight: 400;
 }
 .courses-btn:hover{
-    background: rgb(122, 75, 165);
+    background: rgb(0, 41, 177);
     font-weight: 600;
     color: white;
 }
