@@ -1,4 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Volkhov&display=swap');
+/* 
+font-family: 'Muli', sans-serif;
+font-family: 'Volkhov', serif;
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
 body{
     background-color: rgb(226, 226, 226);
     color: rgb(15, 15, 15);
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+}
+
+header{
+    padding: 5px;
+    background-color: rgba(57, 0, 110, 0.678);
+    height: 50px;
+    color: white;
+}
+
+#logo{
+    color: rgb(255, 255, 255);
+    height: 40px;
+    padding: 5px 5px;
+    font-size: .8em;
+    float: left;
+}
+nav li{
+    float: right;
+    list-style-type: none;
+    padding: 10px 0;
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 5px;
+    text-transform: uppercase;
 }
