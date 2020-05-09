@@ -13,13 +13,12 @@ font-family: 'Volkhov', serif;
 
 body{
     background-color: rgb(226, 226, 226);
-    color: rgb(15, 15, 15);
+    color: rgb(224, 224, 224);
     font-family: 'Muli', sans-serif;
-    font-size: 16px;
+    font-size: 1.4em;
 }
 
 header{
-    padding: 5px;
     background-color: rgba(57, 0, 110, 0.678);
     height: 50px;
     color: white;
@@ -35,11 +34,107 @@ header{
 nav li{
     float: right;
     list-style-type: none;
-    padding: 10px 0;
+    padding: 16.5px 0;
+    font-size: .6em;
 }
 nav li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 0 5px;
+    padding: 16.5px 10px;
     text-transform: uppercase;
+    cursor: pointer;
+}
+nav li a:hover{
+    background: purple;
+    font-weight: 600;
+}
+.container{
+    width: 1120px;
+    margin: auto;
+    padding: 2em;
+}
+
+/* =========================Hero Section============================*/
+.hero{
+    background-image: url('/image/hero.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    height: 60vh;
+    color: white;
+}
+.hero-overlay{
+    min-height: 400px;
+    height: 60vh;
+    padding: 10vh 0;
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+.slogan h1{
+    font-family: 'Volkhov', serif;
+    font-size: 2em;
+}
+
+/* rows and Column*/
+.column{
+    width: 50%;
+    float: left;
+}
+.column-md{
+    width: 33.33%;
+}
+.column-sm{
+    width: 25%;
+}
+
+/* ================ Custom Buttons ===================*/
+.subscribe{
+    text-align: end;
+    padding-left: 30px;
+}
+.subscribe h6{
+    font-family: 'Volkhov', serif;
+    font-weight: 100;
+    margin: 10px;
+}
+.subscribe-btn{
+    padding: 10px;
+    font-size: 1em;
+    background-color: red;
+    color: white;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+.form-input{
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+}
+
+/* ================ social media Buttons ===================*/
+.social-section{
+    clear: both;
+    height: 100px;
+    margin: auto;
+    padding-top: 4rem;
+}
+.social-section ul{
+    padding: 35px 10px;
+    margin: auto;
+    text-align: center;
+    align-items: baseline;
+}
+.social-section li{
+    display: inline;
+    padding: 0 10px;
+}
+.social-btn{
+    height: 30px;
+    margin: auto;
+    background-color: white;
+    border-radius: 50%;
 }
