@@ -23,7 +23,14 @@ header{
     height: 50px;
     color: white;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.section-item{
+    padding: .5em 0;
+}
 #logo{
     color: rgb(255, 255, 255);
     height: 40px;
@@ -114,6 +121,22 @@ nav li a:hover{
     border: none;
     font-size: 1em;
 }
+.courses-btn{
+    margin: 1.3em 0;
+    background: none;
+    color: rgb(122, 75, 165);
+    border-radius: 10px;
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid rgb(122, 75, 165);
+    cursor: pointer;
+    font-weight: 400;
+}
+.courses-btn:hover{
+    background: rgb(122, 75, 165);
+    font-weight: 600;
+    color: white;
+}
 
 /* ================ social media Buttons ===================*/
 .social-section{
@@ -137,4 +160,15 @@ nav li a:hover{
     margin: auto;
     background-color: white;
     border-radius: 50%;
+}
+/* ================ javascript intro section ===================*/
+.js-intro{
+    height: 500px;
+    padding: 3em;
+    background: white;
+    color: black;
+    font-size: .8em;
+}
+.article-img img{
+    height: 300px;
 }
