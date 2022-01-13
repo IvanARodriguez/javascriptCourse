@@ -1,3 +1,5 @@
+// FINDING THE TWO SMALLEST NUMBERS IN AN ARRAY AND SUM THEM.
+
 let myNumbers = [22, 3, 20, 90, 30, 27];
 
 
@@ -16,7 +18,6 @@ function sumTwoSmallestNumbers(numbers){
         smallest = numbers[1]
         secondSmallest = numbers[0]
     }
-    
     //iterate  over numbers starting with the 3rd number
     for(let i = 2; i < numbers.length; i++){
         const currentNumber = numbers[i];
@@ -32,8 +33,9 @@ function sumTwoSmallestNumbers(numbers){
                 secondSmallest = currentNumber;
         }
     }
-    let result = "Your two smallest numbers are "+ smallest + " and " + secondSmallest + " and the sum is " + (smallest+secondSmallest);
+    let result = "Your two smallest numbers are "+ smallest + " and " + secondSmallest + " and the sum = " + (smallest+secondSmallest);
     return result; 
 }
 
 console.log(sumTwoSmallestNumbers(myNumbers));
+
