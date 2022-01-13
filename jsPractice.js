@@ -1,4 +1,4 @@
-let numbers = [22, 10, 20, 90, 30, 27];
+let myNumbers = [22, 3, 20, 90, 30, 27];
 
 
 function sumTwoSmallestNumbers(numbers){
@@ -32,9 +32,8 @@ function sumTwoSmallestNumbers(numbers){
                 secondSmallest = currentNumber;
         }
     }
-    console.log(smallest, secondSmallest);
-
-    return smallest + secondSmallest;
-
-        
+    let result = "Your two smallest numbers are "+ smallest + " and " + secondSmallest + " and the sum is " + (smallest+secondSmallest);
+    return result; 
 }
+
+console.log(sumTwoSmallestNumbers(myNumbers));
