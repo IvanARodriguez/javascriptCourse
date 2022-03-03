@@ -2,7 +2,6 @@
 
 let myNumbers = [22, 3, 20, 90, 30, 27];
 
-
 function sumTwoSmallestNumbers(numbers){
     //find the two smallest numbers
 
@@ -36,6 +35,59 @@ function sumTwoSmallestNumbers(numbers){
     let result = "Your two smallest numbers are "+ smallest + " and " + secondSmallest + " and the sum = " + (smallest+secondSmallest);
     return result; 
 }
+// ==========================================================================================
+// Working with arrays and switch to display the days of the week============================
+// ==========================================================================================
 
-console.log(sumTwoSmallestNumbers(myNumbers));
+// Lets print the days of the week
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+// print days array with a for loop.
+for(let i = 0; i < days.length; i++){
+    document.getElementById("daysOfTheWeek").innerHTML += "<br>"+ days[i];
+    console.log(days[i]);
+}
 
+// GREETING FOR USER
+// get the current day
+const dayOfWeek = new Date().getDay();
+let greeting;
+let dayMessage;
+// greet from current day
+switch(days[dayOfWeek]){
+    case "Sunday": // Sunday
+        greeting = "Hi there " + "today is " + days[dayOfWeek] + ": ";
+        dayMessage = "Sunday funday, what are you doing today?";
+        document.getElementById("daysOfTheWeek").innerHTML += "<br>" + greeting + dayMessage;
+        break
+    case "Monday": // Monday
+        greeting = "Hi there " + "today is " + days[dayOfWeek] + ": ";
+        dayMessage = "Let's start Monday with a great attitude!";
+        document.getElementById("daysOfTheWeek").innerHTML += "<br>" + greeting + dayMessage;
+        break
+    case "Tuesday": // Tuesday
+        greeting = "Hi there " + "today is " + days[dayOfWeek] + ": ";
+        dayMessage = "Tuesday is a great day for walking and relax";
+        document.getElementById("daysOfTheWeek").innerHTML += "<br>" + greeting + dayMessage;
+        break
+    case "Wednesday": // Wednesday
+        greeting = "Hi there " + "today is " + days[dayOfWeek] + ": ";
+        dayMessage = "Wednesday is s great day to go out and eat something";
+        document.getElementById("daysOfTheWeek").innerHTML += "<br>" + greeting + dayMessage;
+        break
+    case "Thursday": // Thrusday
+        greeting = "Hi there " + "today is " + days[dayOfWeek] + ": ";
+        dayMessage = "On thrusday almost everyone gets ready for the weekend";
+        document.getElementById("daysOfTheWeek").innerHTML += "<br>" + greeting + dayMessage;
+        break
+    case "Friday": // Friday
+        greeting = "Hi there " + "today is " + days[dayOfWeek] + ": ";
+        dayMessage = "Friday is here and we can party at night.";
+        document.getElementById("daysOfTheWeek").innerHTML += "<br>" + greeting + dayMessage;
+        break
+    case "Saturday": // Saturday
+        greeting = "Hi there " + "today is " + days[dayOfWeek] + ": ";
+        dayMessage = "On Saturday I love to spend the day out if is sunny";
+        document.getElementById("daysOfTheWeek").innerHTML += "<br>" + greeting + dayMessage;
+        break
+}
+console.log(greeting);

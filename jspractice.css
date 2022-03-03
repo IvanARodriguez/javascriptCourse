@@ -13,14 +13,14 @@ font-family: 'Volkhov', serif;
 
 body{
     background-color: rgb(40, 37, 50);
-    color: rgb(224, 224, 224);
+    color: rgb(201, 201, 201);
     font-family: 'Muli', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 .container{
-    text-align: center;
     font-size: 1.3em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
