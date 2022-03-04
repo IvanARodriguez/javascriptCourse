@@ -12,7 +12,9 @@ const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
 
  fruits.forEach(logFruits);
 
-//  ES6 iteration
+//  ES6 iteration ======================================
+console.log("ES6 iteration");
+
 
 fruits.forEach(fruitItem => console.log(`I want to eat a ${fruitItem} `));
 
@@ -31,6 +33,36 @@ const bigNumbers = [100, 200, 300, 400, 500];
 const smallNumbers = bigNumbers.map(number => {return number / 100});
 
 console.log(smallNumbers.join(' '));
+console.log(" ");
+
+//working with filter()
+console.log("Working with filter()");
+
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+// Call .filter() on randomNumbers below
+const smallNumbers2 = randomNumbers.filter(number => {
+  return number < 250;
+});
+
+console.log(smallNumbers2.join(' '));
+
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+// Call .filter() on favoriteWords below
+const longFavoriteWords = favoriteWords.filter(word => {
+  return word.length > 7;
+})
+console.log(favoriteWords.join(' '));
+
+console.log('Working with findIndex()');
+
+const animals2 = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+const foundAnimal = animals2.findIndex(animal => {return animal === 'elephant'});
+console.log(foundAnimal);
+
+const startsWithS = animals2.findIndex(animal => {return animal[0] === 's'});
+console.log(startsWithS);
 
 console.log("");
 
