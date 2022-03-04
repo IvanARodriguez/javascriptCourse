@@ -64,5 +64,38 @@ console.log(foundAnimal);
 const startsWithS = animals2.findIndex(animal => {return animal[0] === 's'});
 console.log(startsWithS);
 
+//Call reduce() to acumulate the numbers in an array below
+const newNumbers = [1, 3, 5, 7];
+
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  console.log('The current value of accumulator: ', accumulator);
+  console.log('The current value of currentValue: ', currentValue);
+
+  return accumulator + currentValue;
+}, 10) // 10 is a third argument that increment the accumulator by 10
+
+console.log(newSum);
+
+// using some() and every() functions
+const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+
+// Something is missing in the method call below
+
+console.log(words.some((word) => {
+  return word.length < 6;
+}));
+
+const interestingWords = words.filter(word => {
+  return word.length > 5;
+})
+
+// Use filter to create a new array
+const newWords = words.filter(word => {return word.length < 6})
+
+
+// Make sure to uncomment the code below and fix the incorrect code before running it
+
+console.log(interestingWords.every(word => {return word.length > 5 } ));
+
 console.log("");
 
